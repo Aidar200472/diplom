@@ -261,10 +261,14 @@ main {
 }
 
 .product-title {
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: 10px;
-    height: 40px;
+    min-height: 50px;
     overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    line-height: 1.3;
 }
 
 .product-brand {
@@ -327,11 +331,11 @@ main {
 
 .modal-content {
     background-color: white;
-    margin: 5% auto;
-    padding: 30px;
+    margin: 2% auto;
+    padding: 25px;
     border-radius: 5px;
-    width: 80%;
-    max-width: 800px;
+    width: 90%;
+    max-width: 1000px;
     position: relative;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
@@ -365,67 +369,109 @@ main {
 
 /* Детали товара */
 .modal-product-details {
-    display: flex;
-    gap: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 10px;
 }
 
 .modal-product-image {
     width: 100%;
-    max-width: 500px;
+    max-width: 400px;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .modal-product-image img {
     width: 100%;
     height: auto;
     object-fit: contain;
-    max-height: 500px;
+    max-height: 300px;
 }
 
 .modal-product-info {
-    flex: 1;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    font-size: 14px;
 }
 
 .modal-product-title {
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: 20px;
+    margin-bottom: 12px;
+    line-height: 1.3;
+    color: #2c3e50;
 }
 
 .modal-product-brand {
-    font-size: 16px;
+    font-size: 14px;
     color: #7f8c8d;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #eee;
 }
 
 .modal-product-price {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: bold;
     color: #e74c3c;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #eee;
 }
 
 .modal-product-description {
     margin-bottom: 20px;
-    line-height: 1.6;
+    line-height: 1.5;
+    color: #444;
+    font-size: 14px;
 }
 
 .modal-product-specs {
-    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+}
+
+.modal-product-specs h4 {
+    font-size: 16px;
+    margin-bottom: 12px;
+    color: #2c3e50;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #eee;
 }
 
 .spec-item {
     display: flex;
     margin-bottom: 8px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #f0f0f0;
 }
 
 .spec-name {
-    font-weight: bold;
-    width: 150px;
+    font-weight: 600;
+    width: 180px;
+    color: #666;
 }
 
 .modal-product-actions {
+    margin-top: 20px;
     display: flex;
     gap: 15px;
+}
+
+.modal-product-actions .add-to-cart-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    width: 100%;
 }
 
 /* Корзина */
@@ -683,8 +729,22 @@ footer {
         margin-bottom: 30px;
     }
     
+    .modal-content {
+        margin: 5% auto;
+        padding: 20px;
+    }
+    
     .modal-product-details {
-        flex-direction: column;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .modal-product-image {
+        max-width: 350px;
+    }
+    
+    .modal-product-info {
+        padding: 12px;
     }
 }
 
@@ -729,14 +789,26 @@ footer {
     }
     
     .modal-content {
-        width: 95%;
-        padding: 20px 15px;
+        margin: 8% auto;
+        padding: 15px;
     }
     
     .cart-summary {
         flex-direction: column;
         align-items: flex-start;
         gap: 15px;
+    }
+    
+    .modal-product-title {
+        font-size: 18px;
+    }
+    
+    .modal-product-specs {
+        padding: 12px;
+    }
+    
+    .spec-name {
+        width: 140px;
     }
 }
 
