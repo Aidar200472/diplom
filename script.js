@@ -1,134 +1,159 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Данные товаров
     const products = [
+        // Холодильники
         {
             id: 1,
-            title: "Холодильник Samsung RB37A52N0SA",
+            title: "Холодильник Samsung RF48A4000B4",
             brand: "Samsung",
-            price: 54990,
-            image: "images/1.jpg",
-            description: "Двухкамерный холодильник с системой No Frost, объемом 367 л (холодильная камера - 272 л, морозильная камера - 95 л). Класс энергопотребления A+, уровень шума - 38 дБ.",
+            price: 189999,
+            image: "placeholder.jpg", // Здесь будет путь к изображению
+            description: "4-дверный холодильник с технологией Twin Cooling Plus",
             specs: {
-                "Тип": "Двухкамерный",
-                "No Frost": "Да",
-                "Общий объем": "367 л",
-                "Энергопотребление": "A+",
-                "Уровень шума": "38 дБ",
-                "Цвет": "Серебристый",
-                "Гарантия": "3 года"
+                "Тип": "4-дверный",
+                "Общий объем": "486 л",
+                "Система разморозки": "No Frost",
+                "Класс энергопотребления": "A++",
+                "Цвет": "Черный"
             }
         },
         {
             id: 2,
-            title: "Стиральная машина LG F2J3NS0W",
+            title: "Холодильник LG DoorCooling+ GC-B247SVDC",
             brand: "LG",
-            price: 42990,
-            image: "images/2.jpg",
-            description: "Стиральная машина с фронтальной загрузкой, вместимостью 6 кг, класс энергопотребления A+++, максимальная скорость отжима - 1200 об/мин. Технология Direct Drive для тихой работы.",
+            price: 159990,
+            image: "placeholder.jpg",
+            description: "Двухдверный холодильник с инверторным компрессором",
             specs: {
-                "Тип загрузки": "Фронтальная",
-                "Вместимость": "6 кг",
-                "Энергопотребление": "A+++",
-                "Отжим": "1200 об/мин",
-                "Габариты": "85x60x45 см",
-                "Цвет": "Белый",
-                "Гарантия": "2 года"
+                "Тип": "Двухдверный",
+                "Общий объем": "384 л",
+                "Система разморозки": "No Frost",
+                "Класс энергопотребления": "A++",
+                "Цвет": "Серебристый"
             }
         },
+        // Стиральные машины
         {
             id: 3,
-            title: "Телевизор Sony KD-55X81J",
-            brand: "Sony",
-            price: 79990,
-            image: "images/3.jpg",
-            description: "Телевизор с диагональю 55 дюймов, разрешение 4K UHD, технология HDR, процессор X1, операционная система Android TV. Поддержка Dolby Vision и Dolby Atmos.",
+            title: "Стиральная машина Bosch WAV28L90ME",
+            brand: "Bosch",
+            price: 129990,
+            image: "placeholder.jpg",
+            description: "Стиральная машина с технологией i-DOS и Home Connect",
             specs: {
-                "Диагональ": "55 дюймов",
-                "Разрешение": "3840x2160 (4K UHD)",
-                "HDR": "Да",
-                "Smart TV": "Android TV",
-                "Частота": "100 Гц",
-                "Гарантия": "3 года"
+                "Загрузка": "9 кг",
+                "Скорость отжима": "1400 об/мин",
+                "Класс энергопотребления": "A+++",
+                "Технологии": "i-DOS, Home Connect",
+                "Цвет": "Белый"
             }
         },
         {
             id: 4,
-            title: "Посудомоечная машина Bosch SMS6ECI01E",
-            brand: "Bosch",
-            price: 45990,
-            image: "images/4.jpg",
-            description: "Встраиваемая посудомоечная машина с вместимостью 13 комплектов посуды, класс энергопотребления A++, уровень шума - 44 дБ. 6 программ мойки, включая интенсивную и эко-программы.",
+            title: "Стиральная машина Miele WWG 660 WCS",
+            brand: "Miele",
+            price: 159990,
+            image: "placeholder.jpg",
+            description: "Стиральная машина с технологией TwinDos",
             specs: {
-                "Тип": "Встраиваемая",
-                "Вместимость": "13 комплектов",
-                "Энергопотребление": "A++",
-                "Уровень шума": "44 дБ",
-                "Программы": "6",
-                "Гарантия": "2 года"
+                "Загрузка": "9 кг",
+                "Скорость отжима": "1400 об/мин",
+                "Класс энергопотребления": "A+++",
+                "Технологии": "TwinDos, PowerWash",
+                "Цвет": "Белый"
             }
         },
+        // Телевизоры
         {
             id: 5,
-            title: "Микроволновая печь Panasonic NN-ST34HZRU",
-            brand: "Panasonic",
-            price: 12990,
-            image: "images/5.jpg",
-            description: "Микроволновая печь с объемом 23 л, мощность 800 Вт, гриль, инверторная технология, 5 уровней мощности, автоматические программы приготовления.",
+            title: "Телевизор LG OLED65G3",
+            brand: "LG",
+            price: 299990,
+            image: "placeholder.jpg",
+            description: "65-дюймовый OLED телевизор с процессором α9 Gen6",
             specs: {
-                "Объем": "23 л",
-                "Мощность": "800 Вт",
-                "Гриль": "Да",
-                "Автопрограммы": "Да",
-                "Цвет": "Серебристый",
-                "Гарантия": "1 год"
+                "Диагональ": "65 дюймов",
+                "Разрешение": "4K (3840x2160)",
+                "Технология": "OLED evo",
+                "HDR": "Dolby Vision IQ",
+                "Частота": "120 Гц"
             }
         },
         {
             id: 6,
-            title: "Пылесос Dyson V11 Absolute",
-            brand: "Dyson",
-            price: 59990,
-            image: "images/6.jpg",
-            description: "Беспроводной пылесос с технологией Hyperdymium, время работы до 60 минут, 3 режима мощности, ЖК-дисплей, насадки для разных типов уборки.",
+            title: "Телевизор Samsung QE75QN900C",
+            brand: "Samsung",
+            price: 849990,
+            image: "placeholder.jpg",
+            description: "75-дюймовый Neo QLED 8K телевизор",
             specs: {
-                "Тип": "Беспроводной",
-                "Время работы": "до 60 мин",
-                "Пылесборник": "0.76 л",
-                "Режимы": "3",
-                "Вес": "2.97 кг",
-                "Гарантия": "2 года"
+                "Диагональ": "75 дюймов",
+                "Разрешение": "8K (7680x4320)",
+                "Технология": "Neo QLED",
+                "HDR": "HDR10+",
+                "Частота": "120 Гц"
             }
         },
+        // Кухонная техника
         {
             id: 7,
-            title: "Кофемашина DeLonghi Eletta Explore ECAM 45.760.W",
-            brand: "DeLonghi",
-            price: 89990,
-            image: "images/7.jpg",
-            description: "Автоматическая кофемашина с возможностью приготовления капучино, технология LatteCrema System, 13 уровней помола, 4 пользовательских профиля.",
+            title: "Кофемашина De'Longhi ECAM650.85.MS",
+            brand: "De'Longhi",
+            price: 199990,
+            image: "placeholder.jpg",
+            description: "Автоматическая кофемашина с системой LatteCrema",
             specs: {
                 "Тип": "Автоматическая",
-                "Капучинатор": "Да",
-                "Помол": "13 уровней",
-                "Емкость воды": "1.8 л",
-                "Емкость зерен": "300 г",
-                "Гарантия": "2 года"
+                "Давление": "19 бар",
+                "Объем контейнера для зерен": "400 г",
+                "Дисплей": "Цветной сенсорный",
+                "Цвет": "Серебристый"
             }
         },
         {
             id: 8,
-            title: "Кондиционер Ballu BSEI-12HN1",
-            brand: "Ballu",
-            price: 34990,
-            image: "images/8.jpg",
-            description: "Инверторный кондиционер с мощностью охлаждения 3.5 кВт, площадь обслуживания до 35 кв.м, класс энергопотребления A++, уровень шума - 19 дБ.",
+            title: "Посудомоечная машина Bosch SMS8ZDI48R",
+            brand: "Bosch",
+            price: 129990,
+            image: "placeholder.jpg",
+            description: "Посудомоечная машина с системой PerfectDry",
             specs: {
-                "Тип": "Инверторный",
-                "Мощность": "3.5 кВт",
-                "Площадь": "до 35 кв.м",
-                "Энергопотребление": "A++",
+                "Вместимость": "14 комплектов",
+                "Расход воды": "9.5 л",
+                "Уровень шума": "42 дБ",
+                "Программы": "8 программ",
+                "Цвет": "Нержавеющая сталь"
+            }
+        },
+        // Климатическая техника
+        {
+            id: 9,
+            title: "Кондиционер Daikin FTXZ50N/RXZ50N",
+            brand: "Daikin",
+            price: 199990,
+            image: "placeholder.jpg",
+            description: "Инверторный кондиционер с технологией Ururu Sarara",
+            specs: {
+                "Мощность охлаждения": "5 кВт",
+                "Энергоэффективность": "A+++",
                 "Уровень шума": "19 дБ",
-                "Гарантия": "3 года"
+                "Режимы": "Охлаждение, обогрев, осушение",
+                "Площадь помещения": "до 50 м²"
+            }
+        },
+        {
+            id: 10,
+            title: "Очиститель воздуха Dyson Pure Humidify+Cool PH03",
+            brand: "Dyson",
+            price: 69990,
+            image: "placeholder.jpg",
+            description: "Очиститель воздуха с функцией увлажнения и охлаждения",
+            specs: {
+                "Площадь очистки": "до 81 м²",
+                "Фильтрация": "HEPA H13",
+                "Уровень шума": "от 35 дБ",
+                "Управление": "Пульт ДУ, приложение",
+                "Цвет": "Белый/Серебристый"
             }
         }
     ];
@@ -152,6 +177,81 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Корзина
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+    // Добавляем функцию фильтрации товаров
+    function filterProducts(category) {
+        const filteredProducts = category === 'all' 
+            ? products 
+            : products.filter(product => {
+                switch(category) {
+                    case 'refrigerators':
+                        return product.title.toLowerCase().includes('холодильник');
+                    case 'washers':
+                        return product.title.toLowerCase().includes('стиральная');
+                    case 'tvs':
+                        return product.title.toLowerCase().includes('телевизор');
+                    case 'kitchen':
+                        return product.title.toLowerCase().includes('микроволнов') || 
+                               product.title.toLowerCase().includes('кофемашина') ||
+                               product.title.toLowerCase().includes('посудомоечная');
+                    case 'climate':
+                        return product.title.toLowerCase().includes('кондиционер');
+                    default:
+                        return true;
+                }
+            });
+
+        displayFilteredProducts(filteredProducts);
+    }
+
+    // Функция отображения отфильтрованных товаров
+    function displayFilteredProducts(filteredProducts) {
+        productGrid.innerHTML = '';
+        if (filteredProducts.length === 0) {
+            productGrid.innerHTML = '<div class="no-products">Товары не найдены</div>';
+            return;
+        }
+        
+        filteredProducts.forEach(product => {
+            const productCard = document.createElement('div');
+            productCard.className = 'product-card';
+            productCard.innerHTML = `
+                <div class="product-image">
+                    <img src="${product.image}" alt="${product.title}" onerror="this.src='https://via.placeholder.com/300x300?text=Изображение+недоступно'">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">${product.title}</h3>
+                    <p class="product-brand">${product.brand}</p>
+                    <p class="product-price">${product.price.toLocaleString()} ₽</p>
+                    <div class="product-actions">
+                        <button class="details-btn" data-id="${product.id}">Подробнее</button>
+                        <button class="add-to-cart-btn" data-id="${product.id}">В корзину</button>
+                    </div>
+                </div>
+            `;
+            productGrid.appendChild(productCard);
+        });
+
+        // Обновляем обработчики кнопок
+        attachProductButtonHandlers();
+    }
+
+    // Функция прикрепления обработчиков к кнопкам товаров
+    function attachProductButtonHandlers() {
+        document.querySelectorAll('.details-btn').forEach(button => {
+            button.addEventListener('click', (e) => {
+                const productId = parseInt(e.target.getAttribute('data-id'));
+                showProductDetails(productId);
+            });
+        });
+
+        document.querySelectorAll('.add-to-cart-btn').forEach(button => {
+            button.addEventListener('click', (e) => {
+                const productId = parseInt(e.target.getAttribute('data-id'));
+                addToCart(productId);
+            });
+        });
+    }
 
     // Отображение товаров
     function displayProducts() {
@@ -433,12 +533,53 @@ document.addEventListener('DOMContentLoaded', function() {
         localStorage.setItem('orders', JSON.stringify(orders));
     }
 
-    // Инициализация
+    // Модифицируем функцию init
     function init() {
+        // Добавляем обработчики для навигационных кнопок
+        document.querySelectorAll('nav ul li a').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                
+                // Проверяем, является ли это ссылкой на контакты
+                if (link.getAttribute('href') === '#contacts') {
+                    const contactsSection = document.getElementById('contacts');
+                    if (contactsSection) {
+                        contactsSection.scrollIntoView({ behavior: 'smooth' });
+                    }
+                    return;
+                }
+                
+                // Удаляем активный класс у всех ссылок
+                document.querySelectorAll('nav ul li a').forEach(l => l.classList.remove('active'));
+                // Добавляем активный класс к нажатой ссылке
+                e.target.classList.add('active');
+
+                // Определяем категорию
+                const category = e.target.getAttribute('data-category') || 'all';
+                filterProducts(category);
+            });
+        });
+
+        // Добавляем обработчики для боковой панели категорий
+        document.querySelectorAll('.categories ul li a').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                
+                // Удаляем активный класс у всех ссылок
+                document.querySelectorAll('.categories ul li a').forEach(l => l.classList.remove('active'));
+                // Добавляем активный класс к нажатой ссылке
+                e.target.classList.add('active');
+
+                // Определяем категорию
+                const category = e.target.getAttribute('data-category') || 'all';
+                filterProducts(category);
+            });
+        });
+
         displayProducts();
         updateCartCount();
 
-        // Обработчики модальных окон
+        // Остальные обработчики из оригинальной функции init
         cartIcon.addEventListener('click', () => {
             renderCartItems();
             cartModal.style.display = 'block';
@@ -468,7 +609,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
 
-        // Обработчики кнопок
         checkoutBtn.addEventListener('click', checkout);
         checkoutForm.addEventListener('submit', submitOrder);
         continueShoppingBtn.addEventListener('click', () => {
