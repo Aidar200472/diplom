@@ -325,9 +325,20 @@ document.addEventListener('DOMContentLoaded', function() {
                     case 'kitchen':
                         return product.title.toLowerCase().includes('микроволнов') || 
                                product.title.toLowerCase().includes('кофемашина') ||
-                               product.title.toLowerCase().includes('посудомоечная');
+                               product.title.toLowerCase().includes('посудомоечная') ||
+                               product.title.toLowerCase().includes('комбайн');
                     case 'climate':
-                        return product.title.toLowerCase().includes('кондиционер');
+                        return product.title.toLowerCase().includes('кондиционер') || 
+                               product.title.toLowerCase().includes('очиститель') ||
+                               product.title.toLowerCase().includes('обогреватель');
+                    case 'vacuum':
+                        return product.title.toLowerCase().includes('пылесос');
+                    case 'microwave':
+                        return product.title.toLowerCase().includes('микроволнов');
+                    case 'food_processors':
+                        return product.title.toLowerCase().includes('комбайн');
+                    case 'heaters':
+                        return product.title.toLowerCase().includes('обогреватель');
                     default:
                         return true;
                 }
