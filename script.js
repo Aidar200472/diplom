@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
             title: "Холодильник Samsung RF48A4000B4",
             brand: "Samsung",
             price: 189999,
-            image: "placeholder.jpg", // Здесь будет путь к изображению
+            image: "images/samsung-rf48a4000b4.jpg",
             description: "4-дверный холодильник с технологией Twin Cooling Plus",
             specs: {
                 "Тип": "4-дверный",
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
             title: "Холодильник LG DoorCooling+ GC-B247SVDC",
             brand: "LG",
             price: 159990,
-            image: "placeholder.jpg",
+            image: "images/lg-gc-b247svdc.jpg",
             description: "Двухдверный холодильник с инверторным компрессором",
             specs: {
                 "Тип": "Двухдверный",
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
             title: "Стиральная машина Bosch WAV28L90ME",
             brand: "Bosch",
             price: 129990,
-            image: "placeholder.jpg",
+            image: "images/bosch-wav28l90me.jpg",
             description: "Стиральная машина с технологией i-DOS и Home Connect",
             specs: {
                 "Загрузка": "9 кг",
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
             title: "Стиральная машина Miele WWG 660 WCS",
             brand: "Miele",
             price: 159990,
-            image: "placeholder.jpg",
+            image: "images/miele-wwg660wcs.jpg",
             description: "Стиральная машина с технологией TwinDos",
             specs: {
                 "Загрузка": "9 кг",
@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function() {
             title: "Телевизор LG OLED65G3",
             brand: "LG",
             price: 299990,
-            image: "placeholder.jpg",
+            image: "images/lg-oled65g3.jpg",
             description: "65-дюймовый OLED телевизор с процессором α9 Gen6",
             specs: {
                 "Диагональ": "65 дюймов",
@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
             title: "Телевизор Samsung QE75QN900C",
             brand: "Samsung",
             price: 849990,
-            image: "placeholder.jpg",
+            image: "images/samsung-qe75qn900c.jpg",
             description: "75-дюймовый Neo QLED 8K телевизор",
             specs: {
                 "Диагональ": "75 дюймов",
@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', function() {
             title: "Кофемашина De'Longhi ECAM650.85.MS",
             brand: "De'Longhi",
             price: 199990,
-            image: "placeholder.jpg",
+            image: "images/delonghi-ecam650-85ms.jpg",
             description: "Автоматическая кофемашина с системой LatteCrema",
             specs: {
                 "Тип": "Автоматическая",
@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', function() {
             title: "Посудомоечная машина Bosch SMS8ZDI48R",
             brand: "Bosch",
             price: 129990,
-            image: "placeholder.jpg",
+            image: "images/bosch-sms8zdi48r.jpg",
             description: "Посудомоечная машина с системой PerfectDry",
             specs: {
                 "Вместимость": "14 комплектов",
@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', function() {
             title: "Кондиционер Daikin FTXZ50N/RXZ50N",
             brand: "Daikin",
             price: 199990,
-            image: "placeholder.jpg",
+            image: "images/daikin-ftxz50n.jpg",
             description: "Инверторный кондиционер с технологией Ururu Sarara",
             specs: {
                 "Мощность охлаждения": "5 кВт",
@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', function() {
             title: "Очиститель воздуха Dyson Pure Humidify+Cool PH03",
             brand: "Dyson",
             price: 69990,
-            image: "placeholder.jpg",
+            image: "images/dyson-ph03.jpg",
             description: "Очиститель воздуха с функцией увлажнения и охлаждения",
             specs: {
                 "Площадь очистки": "до 81 м²",
@@ -162,7 +162,7 @@ document.addEventListener('DOMContentLoaded', function() {
             title: "Пылесос Dyson V15 Detect Absolute",
             brand: "Dyson",
             price: 69990,
-            image: "placeholder.jpg",
+            image: "images/dyson-v15-detect.jpg",
             description: "Беспроводной пылесос с лазерным детектором пыли и умным дисплеем",
             specs: {
                 "Тип": "Вертикальный беспроводной",
@@ -178,7 +178,7 @@ document.addEventListener('DOMContentLoaded', function() {
             title: "Пылесос Samsung Jet Bot AI+ VR50T95735W",
             brand: "Samsung",
             price: 129990,
-            image: "placeholder.jpg",
+            image: "images/samsung-jetbot-ai.jpg",
             description: "Робот-пылесос с искусственным интеллектом и автоматической станцией очистки",
             specs: {
                 "Тип": "Робот-пылесос",
@@ -195,7 +195,7 @@ document.addEventListener('DOMContentLoaded', function() {
             title: "Микроволновая печь Panasonic NN-GD38HS",
             brand: "Panasonic",
             price: 34990,
-            image: "placeholder.jpg",
+            image: "images/panasonic-nn-gd38hs.jpg",
             description: "Микроволновая печь с грилем и инверторной технологией",
             specs: {
                 "Объем": "23 л",
@@ -211,7 +211,7 @@ document.addEventListener('DOMContentLoaded', function() {
             title: "Микроволновая печь Samsung MC35R8088LC",
             brand: "Samsung",
             price: 49990,
-            image: "placeholder.jpg",
+            image: "images/samsung-mc35r8088lc.jpg",
             description: "Умная микроволновая печь с конвекцией и грилем",
             specs: {
                 "Объем": "35 л",
@@ -228,7 +228,7 @@ document.addEventListener('DOMContentLoaded', function() {
             title: "Кухонный комбайн Kenwood Cooking Chef XL KCL95.424SI",
             brand: "Kenwood",
             price: 199990,
-            image: "placeholder.jpg",
+            image: "images/kenwood-kcl95-424si.jpg",
             description: "Многофункциональный кухонный комбайн с функцией приготовления и индукционным нагревом",
             specs: {
                 "Мощность": "1500 Вт",
@@ -244,7 +244,7 @@ document.addEventListener('DOMContentLoaded', function() {
             title: "Кухонный комбайн Bosch OptiMUM MUM9AX5S00",
             brand: "Bosch",
             price: 89990,
-            image: "placeholder.jpg",
+            image: "images/bosch-mum9ax5s00.jpg",
             description: "Мощный кухонный комбайн с автоматическими программами и весами",
             specs: {
                 "Мощность": "1500 Вт",
@@ -261,7 +261,7 @@ document.addEventListener('DOMContentLoaded', function() {
             title: "Обогреватель Dyson Pure Hot+Cool HP07",
             brand: "Dyson",
             price: 54990,
-            image: "placeholder.jpg",
+            image: "images/dyson-hp07.jpg",
             description: "Умный обогреватель с функцией очистки воздуха и охлаждения",
             specs: {
                 "Мощность": "2000 Вт",
@@ -277,7 +277,7 @@ document.addEventListener('DOMContentLoaded', function() {
             title: "Обогреватель Ballu BEP/EXT-2000",
             brand: "Ballu",
             price: 19990,
-            image: "placeholder.jpg",
+            image: "images/ballu-bep-ext-2000.jpg",
             description: "Инфракрасный обогреватель с защитой от перегрева",
             specs: {
                 "Мощность": "2000 Вт",
@@ -322,21 +322,20 @@ document.addEventListener('DOMContentLoaded', function() {
                         return product.title.toLowerCase().includes('стиральная');
                     case 'tvs':
                         return product.title.toLowerCase().includes('телевизор');
-                    case 'kitchen':
-                        return product.title.toLowerCase().includes('микроволнов') || 
-                               product.title.toLowerCase().includes('кофемашина') ||
-                               product.title.toLowerCase().includes('посудомоечная') ||
-                               product.title.toLowerCase().includes('комбайн');
-                    case 'climate':
-                        return product.title.toLowerCase().includes('кондиционер') || 
-                               product.title.toLowerCase().includes('очиститель') ||
-                               product.title.toLowerCase().includes('обогреватель');
                     case 'vacuum':
                         return product.title.toLowerCase().includes('пылесос');
                     case 'microwave':
                         return product.title.toLowerCase().includes('микроволнов');
                     case 'food_processors':
                         return product.title.toLowerCase().includes('комбайн');
+                    case 'coffee_machines':
+                        return product.title.toLowerCase().includes('кофемашин');
+                    case 'dishwashers':
+                        return product.title.toLowerCase().includes('посудомоечн');
+                    case 'air_conditioners':
+                        return product.title.toLowerCase().includes('кондиционер');
+                    case 'air_purifiers':
+                        return product.title.toLowerCase().includes('очиститель');
                     case 'heaters':
                         return product.title.toLowerCase().includes('обогреватель');
                     default:
